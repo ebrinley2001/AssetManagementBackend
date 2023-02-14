@@ -1,0 +1,10 @@
+insert into Users (id, firstName, lastName, userName) values (1, 'Tobe', 'McCrudden', 'tmccrudden0');
+insert into Users (id, firstName, lastName, userName) values (2, 'Loreen', 'Henlon', 'lhenlon1');
+insert into Users (id, firstName, lastName, userName) values (3, 'Curry', 'Satterlee', 'csatterlee2');
+insert into Users (id, firstName, lastName, userName) values (4, 'Janelle', 'Grabham', 'jgrabham3');
+insert into Users (id, firstName, lastName, userName) values (5, 'Camila', 'Hollows', 'chollows4');
+insert into Users (id, firstName, lastName, userName) values (6, 'Ignace', 'Giannasi', 'igiannasi5');
+insert into Users (id, firstName, lastName, userName) values (7, 'Ringo', 'Kingsly', 'rkingsly6');
+insert into Users (id, firstName, lastName, userName) values (8, 'Dinah', 'Rizzotto', 'drizzotto7');
+insert into Users (id, firstName, lastName, userName) values (9, 'Madge', 'McLarnon', 'mmclarnon8');
+insert into Users (id, firstName, lastName, userName) values (10, 'Libbie', 'Latliff', 'llatliff9');
