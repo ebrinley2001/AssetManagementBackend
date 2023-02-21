@@ -154,6 +154,7 @@ Do note that the Id is also required in the Request body to properly update the 
 ```
 ---
 </details>
+
 ### Delete AssetDetail
 <details><summary>Call Details</summary>
 
@@ -172,6 +173,7 @@ Integer
 ```
 ---
 </details>
+
 ### Create AssetDetail
 <details><summary>Call Details</summary>
 
@@ -188,6 +190,7 @@ Integer
 ```
 ---
 </details>
+
 ### Update AssetDetail
 <details><summary>Call Details</summary>
 
@@ -283,6 +286,7 @@ Integer
 ```
 ---
 </details>
+
 ### Update Icon
 <details><summary>Call Details</summary>
 
@@ -348,6 +352,7 @@ Do note that the Id is also required in the Request body to properly update the 
 ```
 ---
 </details>
+
 ### Delete User
 <details><summary>Call Details</summary>
 
@@ -366,6 +371,7 @@ Integer
 ```
 ---
 </details>
+
 ### Create User
 <details><summary>Call Details</summary>
 
@@ -382,6 +388,7 @@ Integer
 ```
 ---
 </details>
+
 ### Update User
 <details><summary> Call Details</summary>
 
