@@ -9,9 +9,9 @@ namespace AssetManagement.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AssetDetailsController : BaseEfWebApi<IAssetDetailBC, AssetDetail, AssetDetailDto>
+    public class AssetDetailController : BaseEfWebApi<IAssetDetailBC, AssetDetail, AssetDetailDto>
     {
-        public AssetDetailsController(IMapper mapper, IAssetDetailBC assetDetailBC) : base(mapper, assetDetailBC)
+        public AssetDetailController(IMapper mapper, IAssetDetailBC assetDetailBC) : base(mapper, assetDetailBC)
         {
         }
     }
