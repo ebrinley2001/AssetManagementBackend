@@ -1,6 +1,8 @@
+
 # AssetManagementBackend
 
 This API functions as the backend for my modular Asset Management System.
+
 
 ## API Reference
 
@@ -12,7 +14,7 @@ These are the controllers and corresponding calls you can make to this API. Sche
 ### Get All Assets
 <details><summary>Call Details</summary>
 
-```http
+```
   GET /api/Asset
 ```
 
@@ -30,7 +32,7 @@ These are the controllers and corresponding calls you can make to this API. Sche
 ### Get Asset
 <details><summary>Call Details</summary>
 
-```http
+```
   GET /api/Asset/{id}
 ```
 
@@ -52,7 +54,7 @@ These are the controllers and corresponding calls you can make to this API. Sche
 ### Delete Asset
 <details><summary>Call Details</summary>
 
-```http
+```
   DELETE /api/Asset/{id}
 ```
 
@@ -71,7 +73,7 @@ Integer
 ### Create Asset
 <details><summary>Call Details</summary>
 
-```http
+```
   POST /api/Asset
 ```
 
@@ -88,7 +90,7 @@ Integer
 ### Update Asset
 <details><summary>Call Details</summary>
 
-```http
+```
   PUT /api/Asset{id}
 ```
 
@@ -115,7 +117,8 @@ Do note that the Id is also required in the Request body to properly update the 
 
 ### Get All AssetDetails
 <details><summary>Call Details</summary>
-```http
+
+```
   GET /api/AssetDetail
 ```
 
@@ -132,7 +135,8 @@ Do note that the Id is also required in the Request body to properly update the 
 
 ### Get AssetDetail
 <details><summary>Call Details</summary>
-```http
+
+```
   GET /api/AssetDetail/{id}
 ```
 
@@ -152,7 +156,8 @@ Do note that the Id is also required in the Request body to properly update the 
 </details>
 ### Delete AssetDetail
 <details><summary>Call Details</summary>
-```http
+
+```
   DELETE /api/AssetDetail/{id}
 ```
 
@@ -169,7 +174,8 @@ Integer
 </details>
 ### Create AssetDetail
 <details><summary>Call Details</summary>
-```http
+
+```
   POST /api/AssetDetail
 ```
 
@@ -184,7 +190,8 @@ Integer
 </details>
 ### Update AssetDetail
 <details><summary>Call Details</summary>
-```http
+
+```
   PUT /api/AssetDetail{id}
 ```
 
@@ -211,7 +218,8 @@ Do note that the Id is also required in the Request body to properly update the 
 
 ### Get All Icons
 <details><summary>Call Details</summary>
-```http
+
+```
   GET /api/Icon
 ```
 
@@ -226,7 +234,8 @@ Do note that the Id is also required in the Request body to properly update the 
 
 ### Get Icon
 <details><summary>Call Details</summary>
-```http
+
+```
   GET /api/Icon/{id}
 ```
 
@@ -244,7 +253,8 @@ Do note that the Id is also required in the Request body to properly update the 
 </details>
 ### Delete Icon
 <details><summary>Call Details</summary>
-```http
+
+```
   DELETE /api/Icon/{id}
 ```
 
@@ -261,7 +271,8 @@ Integer
 </details>
 ### Create Icon
 <details><summary>Call Details</summary>
-```http
+
+```
   POST /api/Icon
 ```
 
@@ -274,7 +285,8 @@ Integer
 </details>
 ### Update Icon
 <details><summary>Call Details</summary>
-```http
+
+```
   PUT /api/Icon/{id}
 ```
 
@@ -299,7 +311,8 @@ Do note that the Id is also required in the Request body to properly update the 
 
 ### Get All Users
 <details><summary>Call Details</summary>
-```http
+
+```
   GET /api/User
 ```
 
@@ -316,7 +329,8 @@ Do note that the Id is also required in the Request body to properly update the 
 
 ### Get User
 <details><summary>Call Details</summary>
-```http
+
+```
   GET /api/User/{id}
 ```
 
@@ -336,7 +350,8 @@ Do note that the Id is also required in the Request body to properly update the 
 </details>
 ### Delete User
 <details><summary>Call Details</summary>
-```http
+
+```
   DELETE /api/User/{id}
 ```
 
@@ -353,7 +368,8 @@ Integer
 </details>
 ### Create User
 <details><summary>Call Details</summary>
-```http
+
+```
   POST /api/User
 ```
 
@@ -368,7 +384,8 @@ Integer
 </details>
 ### Update User
 <details><summary> Call Details</summary>
-```http
+
+```
   PUT /api/Icon/{id}
 ```
 
@@ -389,3 +406,13 @@ Do note that the Id is also required in the Request body to properly update the 
 ---
 </details>
 </details>
+
+
+
+
+
+
+
+
+
+
