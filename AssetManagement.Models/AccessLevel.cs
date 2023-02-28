@@ -3,14 +3,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AssetManagement.Models
 {
-    [Table("Icons")]
-    public class Icon
+    [Table("AccessLevels")]
+    public class AccessLevel
     {
         [Key]
         public int id { get; set; }
         [Required]
-        public string iconName { get; set; }
-        [Required]
-        public string filePath { get; set; }
+        public string levelName { get; set; }
     }
 }

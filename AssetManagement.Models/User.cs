@@ -14,5 +14,10 @@ namespace AssetManagement.Models
         public string lastName { get; set; }
         [Required]
         public string userName { get; set; }
+        [Required]
+        public int permissionLevel { get; set; }
+
+        [ForeignKey("permissionLevel")]
+        public virtual AccessLevel AccessLevel { get; set; }
     }
 }

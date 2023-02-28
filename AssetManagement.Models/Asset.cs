@@ -11,6 +11,8 @@ namespace AssetManagement.Models
         [Required]
         public string name { get; set; }
         [Required]
+        public int type { get; set; }
+        [Required]
         public int iconId { get; set; }
         public int? userRelation { get; set; }
 
@@ -19,5 +21,8 @@ namespace AssetManagement.Models
 
         [ForeignKey("userRelation")]
         public virtual User User { get; set; }
+
+        [ForeignKey("type")]
+        public virtual AssetType AssetType { get; set; }
     }
 }

@@ -25,6 +25,11 @@ builder.Services.AddScoped<IUserBC, UserBC>();
 builder.Services.AddScoped<IAssetRepository, AssetRepository>();
 builder.Services.AddScoped<IAssetBC, AssetBC>();
 
+builder.Services.AddScoped<IAssetTypeRepository, AssetTypeRepository>();
+builder.Services.AddScoped<IAssetTypeBC, AssetTypeBC>();
+
+builder.Services.AddScoped<IAccessLevelRepository, AccessLevelRepository>();
+builder.Services.AddScoped<IAccessLevelBC, AccessLevelBC>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

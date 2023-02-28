@@ -12,6 +12,8 @@ namespace AssetManagement.WebApi.Helpers
             CreateMap<AssetDto, Asset>().ReverseMap();
             CreateMap<UserDto, User>().ReverseMap();
             CreateMap<IconDto, Icon>().ReverseMap();
+            CreateMap<AssetTypeDto, AssetType>().ReverseMap();
+            CreateMap<AccessLevelDto, AccessLevel>().ReverseMap();
         }
     }
 }
