@@ -4,6 +4,8 @@
     [firstName] VARCHAR (50) NOT NULL,
     [lastName]  VARCHAR (50) NOT NULL,
     [permissionLevel] INT NOT NULL DEFAULT 0, 
+    [dateCreated] DATETIME NOT NULL, 
+    [password] VARCHAR(50) NOT NULL, 
     PRIMARY KEY CLUSTERED ([id] ASC),
     CONSTRAINT [permissionLevel] FOREIGN KEY ([permissionLevel]) REFERENCES [dbo].[AccessLevels] ([id])
 );

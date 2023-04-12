@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AssetManagement.Models
@@ -15,7 +16,12 @@ namespace AssetManagement.Models
         [Required]
         public string userName { get; set; }
         [Required]
+        public string password { get; set; }
+        [Required]
+        public DateTime dateCreated { get; set; }
+        [Required]
         public int permissionLevel { get; set; }
+
 
         [ForeignKey("permissionLevel")]
         public virtual AccessLevel AccessLevel { get; set; }
