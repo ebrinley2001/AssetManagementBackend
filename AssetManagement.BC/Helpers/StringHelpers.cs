@@ -15,12 +15,21 @@ namespace AssetManagement.BC.Helpers
 
         public string HashString(string plaintext, string salt)
         {
+            StringBuilder Sb = new StringBuilder();
+
             using (SHA256 hash = SHA256.Create())
             {
                 var passBytes = Encoding.UTF8.GetBytes($"{plaintext}{salt}");
-                return Convert.ToString(hash.ComputeHash(passBytes));
+                var result = hash.ComputeHash(passBytes);
+
+                foreach (Byte b in result)
+                {
+                    Sb.Append(b.ToString("x2"));
+                }
             }
+            return Sb.ToString();
         }
+
 
         public string decryptDES(string ciphertextWithIv)
         {
@@ -34,7 +43,7 @@ namespace AssetManagement.BC.Helpers
             {
                 using (DES des = DES.Create())
                 {
-                    des.Padding = PaddingMode.PKCS7;
+                    des.Padding = PaddingMode.None;
                     using (ICryptoTransform decryptor = des.CreateDecryptor(Encoding.UTF8.GetBytes(_key), ivWords))
                     using (var cStream = new CryptoStream(mStream, decryptor, CryptoStreamMode.Write))
                     {

@@ -11,7 +11,7 @@ using Microsoft.Extensions.Options;
 
 namespace AssetManagement.WebApi.Controllers
 {
-    [Authorize(Roles = "2")]
+    //[Authorize(Roles = "2")]
     [Route("api/[controller]")]
     [ApiController]
     public class UserController : BaseEfWebApi<IUserBC, User, UserDto>
@@ -28,12 +28,19 @@ namespace AssetManagement.WebApi.Controllers
         [HttpPost("login")]
         public async Task<string> Login([FromBody] Login loginDetails)
         {
-            var user = await _userBC.Login(loginDetails);
-            if (user != null)
+            try
             {
-                return user.CreateToken(_jwtDetails);
+                var user = await _userBC.Login(loginDetails);
+                if (user != null)
+                {
+                    return user.CreateToken(_jwtDetails);
+                }
+                return StatusCodes.Status401Unauthorized.ToString();
             }
-            return StatusCodes.Status401Unauthorized.ToString();
+            catch (Exception)
+            {
+                return StatusCodes.Status401Unauthorized.ToString();
+            }
         }
     }
 }
