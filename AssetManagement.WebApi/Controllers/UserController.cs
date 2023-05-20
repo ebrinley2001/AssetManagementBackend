@@ -11,10 +11,9 @@ using Microsoft.Extensions.Options;
 
 namespace AssetManagement.WebApi.Controllers
 {
-    //[Authorize(Roles = "2")]
     [Route("api/[controller]")]
     [ApiController]
-    public class UserController : BaseEfWebApi<IUserBC, User, UserDto>
+    public class UserController : AuthEfWebApi<IUserBC, User, UserDto>
     {
         private readonly IUserBC _userBC;
         private readonly JwtDetails _jwtDetails;

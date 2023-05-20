@@ -11,7 +11,7 @@ namespace AssetManagement.WebApi.Controllers
     [Authorize(Roles = "2")]
     [Route("api/[controller]")]
     [ApiController]
-    public class IconController : BaseEfWebApi<IIconBC, Icon, IconDto>
+    public class IconController : AuthEfWebApi<IIconBC, Icon, IconDto>
     {
         public IconController(IMapper mapper, IIconBC iconBC) : base(mapper, iconBC)
         {

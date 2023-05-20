@@ -11,7 +11,7 @@ namespace AssetManagement.WebApi.Controllers
     [Authorize(Roles = "2")]
     [Route("api/[controller]")]
     [ApiController]
-    public class AssetTypeController : BaseEfWebApi<IAssetTypeBC, AssetType, AssetTypeDto>
+    public class AssetTypeController : AuthEfWebApi<IAssetTypeBC, AssetType, AssetTypeDto>
     {
         public AssetTypeController(IMapper mapper, IAssetTypeBC assetTypeBC) : base(mapper, assetTypeBC)
         {

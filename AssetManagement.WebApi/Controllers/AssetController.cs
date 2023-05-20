@@ -8,10 +8,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AssetManagement.WebApi.Controllers
 {
-    [Authorize(Roles = "2")]
     [Route("api/[controller]")]
     [ApiController]
-    public class AssetController : BaseEfWebApi<IAssetBC, Asset, AssetDto>
+    public class AssetController : AuthEfWebApi<IAssetBC, Asset, AssetDto>
     {
         private readonly IAssetBC _assetBC;
         private readonly IMapper _mapper;
